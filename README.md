@@ -1,10 +1,8 @@
-# Custom-LinkCluster 🔗✨ ** CHANGES INCOMING **
+# Custom-LinkCluster 🔗✨ ** UPDATES INCOMING **
 
 ## The Most Over-Engineered "Coming Soon" Page in the History of my life
 
 ---
-
-## 👁️ SEE IT IN ACTION...
 
 **🌐 Live Demo:** [View the glitching animation here](https://custom-linkcluster.vercel.app) *(Deploy to Vercel to get your own link!)*
 
