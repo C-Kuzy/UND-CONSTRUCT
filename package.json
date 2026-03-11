@@ -1,0 +1,17 @@
+{
+  "name": "custom-coming-soon",
+  "version": "1.0.0",
+  "description": "Pre-Website Custom Coming Soon viewage page with implemented glitch effects",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["coming-soon", "glitch", "vite"],
+  "author": "C-Kuzy",
+  "license": "SEE LICENSE IN EULA-LICENSE",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
