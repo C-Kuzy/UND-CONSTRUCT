@@ -1,6 +1,3 @@
-/* Name: Connor Kouznetsov (C-Kuzy) */
-
-
 // Add random glitch intensity changes
 const glitchElement = document.querySelector('.glitch');
 
