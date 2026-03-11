@@ -21,15 +21,16 @@
   <p><i>Cyberpunk-style glitch effect with cyan/magenta distortions</i></p>
 </div>
 
-**💻 For Vercel Viewers:** You're already experiencing the full glory of the animation! Refresh if you want to see it glitch again.
+**💻 For Vercel Viewers:** You're already experiencing it! Refresh if you want to see it glitch again.
 
-**📂 For GitHub Viewers:** Click the live demo link above or clone the repo and run it locally to see the full animated effect.
+**📂 For GitHub Viewers:** Click the live demo link above or clone the repo/run locally to see animated effect.
 
 ---
 
 ### Why Does This Exist?...
 
-Great question! You see, once upon a time, someone realized that paying $5/month for a "link-tree" service was about as sensible as buying bottled water from the Arctic. Thus, this project was born from the ashes of fiscal responsibility and sprinkled with the glitter of rebellion against subscription-based link aggregation tyranny.
+Great question! You see, once upon a time, I realized that I might take a little more time than others to put an idea together. So I came up with the idea of having a "coming soon" website that would mimic the excitement
+a brand such as Yeezy, Lululemon, Nike, and other big retailers who focus on a countdown or "hype" their fans up with a new idea.
 
 ### The Deep, Philosophical Purpose
 
