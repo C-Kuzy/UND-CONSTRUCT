@@ -4,7 +4,7 @@
 
 ---
 
-**🌐 Live Demo:** [View the glitching animation here](https://custom-linkcluster.vercel.app) *(Deploy to Vercel to get your own link!)*
+**🌐 Live Demo:** [View the glitching animation here](https://ckouznetsov.vercel.app/) *(Deploy to Vercel to get your own link!)*
 
 **📸 Preview for GitHub Viewers:**
 
