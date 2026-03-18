@@ -1,7 +1,7 @@
 {
   "name": "custom-coming-soon",
   "version": "1.0.0",
-  "description": "Pre-Website Custom Coming Soon viewage page with implemented glitch effects",
+  "description": "Pre-Website Custom Coming Soon page with glitch effects, date/time display, EULA & FAQ",
   "type": "module",
   "scripts": {
     "dev": "vite",

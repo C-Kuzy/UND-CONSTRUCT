@@ -34,10 +34,12 @@ export default defineConfig({
     // No sourcemaps in production for security
     sourcemap: false,
     
-    // Rollup configuration with entry point and output options
+    // Rollup configuration with multiple entry points
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html')
+        main: resolve(__dirname, 'index.html'),
+        eula: resolve(__dirname, 'lib/docs/EULA/eula.html'),
+        faq: resolve(__dirname, 'lib/docs/FAQ/FAQ.html'),
       },
       output: {
         // Content-based hashing for cache busting

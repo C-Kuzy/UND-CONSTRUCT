@@ -10,6 +10,14 @@
       "destination": "/index.html"
     },
     {
+      "source": "/lib/docs/EULA/:path*",
+      "destination": "/lib/docs/EULA/$1"
+    },
+    {
+      "source": "/lib/docs/FAQ/:path*",
+      "destination": "/lib/docs/FAQ/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/$1"
     }
@@ -21,6 +29,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
         }
       ]
     }
