@@ -59,7 +59,7 @@ body {
     text-align: center;
     z-index: 10;
     color: #ffffff;
-    font-size: clamp(0.75rem, 2.25vw, 0.95rem);
+    font-size: clamp(0.75rem, 2.25vw, 1rem);
     padding: 10px;
 }
 
