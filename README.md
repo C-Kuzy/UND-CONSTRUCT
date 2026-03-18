@@ -18,7 +18,7 @@
 
 <div align="center">
   <h3>MAIN PAGE - Coming Soon</h3>
-  <img src="https://github.com/user-attachments/assets/0989afa2-226c-459c-bd29-1e87bef48f88" alt="Glitching Website Coming Soon Animation" width="800">
+  <img src="https://github.com/user-attachments/assets/9d42ed5c-6287-42e8-918e-7711dcb1aa0d" alt="Glitching Website Coming Soon Animation" width="800">
   <p><i>Cyberpunk-style glitch effect with cyan/magenta distortions</i></p>
 </div>
 
