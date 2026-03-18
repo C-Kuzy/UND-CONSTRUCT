@@ -17,8 +17,21 @@
 **📸 Preview for GitHub Viewers:**
 
 <div align="center">
+  <h3>MAIN PAGE - Coming Soon</h3>
   <img src="https://github.com/user-attachments/assets/0989afa2-226c-459c-bd29-1e87bef48f88" alt="Glitching Website Coming Soon Animation" width="800">
   <p><i>Cyberpunk-style glitch effect with cyan/magenta distortions</i></p>
+</div>
+
+<div align="center">
+  <h3>EULA PAGE</h3>
+  <img src="https://github.com/user-attachments/assets/13789043-c8e0-477f-9fde-d11653022f13" alt="EULA Page" width="800">
+  <p><i>End User License Agreement with full licensing terms</i></p>
+</div>
+
+<div align="center">
+  <h3>FAQ PAGE</h3>
+  <img src="https://github.com/user-attachments/assets/a3658013-f14c-4ad1-a55b-7fc19ddbd79c" alt="FAQ Page" width="800">
+  <p><i>Frequently Asked Questions about the software and licensing</i></p>
 </div>
 
 **💻 For Vercel Viewers:** You're already experiencing it! Refresh if you want to see it glitch again.
@@ -55,29 +68,105 @@ This project features:
 - 🎨 **A Black Background** - Revolutionary, we know. We considered other colors, but black is:
   - 100% more cyberpunk
   - Saves approximately 0.0001% of your monitor's energy
-  
+
 - ⚡ **Glitching Text Animation** - Because static text is for people who don't appreciate:
   - CSS keyframe animations that would make a film editor weep
   - JavaScript that randomly shakes your text like it's having an existential crisis
   - The aesthetic of a 1990s hacker movie, but modernized for 2026's discerning taste
 
+- 🕐 **Real-Time Date & Time Display** - Live clock showing:
+  - Current date in format: `Month : DD : YYYY`
+  - Current time with AM/PM indicator: `HH : MM : SS : A.M./P.M.`
+  - Updates every second with smooth formatting
+
+- 📜 **EULA & Legal Compliance** - Multi-page structure featuring:
+  - Dedicated EULA page with complete licensing terms
+  - 75% usage threshold policy for commercial use
+  - Mandatory attribution requirements
+  - Open-source compatibility guidelines
+
+- ❓ **FAQ Section** - Comprehensive FAQ with:
+  - 7 detailed questions covering common licensing inquiries
+  - Attribution and modification policies
+  - Contact information and licensing questions
+  - Open-source project guidelines
+
+- 🎮 **Easter Egg - T-Rex Dino Game** - Hidden feature:
+  - Quick access link to the classic Google Chrome T-Rex dinosaur game
+  - Provides a fun distraction on the main footer
+
 - 📱 **Mobile Responsive** - Works on phones, tablets, and probably your smart fridge
-  
-- 🚀 **Vite Build System** - Lightning-fast development with hot module replacement and optimized production builds
-  
+
+- 🚀 **Vite Build System** - Lightning-fast development with hot module replacement and optimized production builds for multiple pages
+
 - 📦 **Organized Project Structure** - Because even chaos needs structure:
   ```
-  Custom-Coming-Soon/
-  ├── index.html              # Entry point
+  UND-CONSTRUCT/
+  ├── index.html                  # Main coming soon page
   ├── lib/
+  │   ├── assets/                 # Image assets and icons
   │   ├── design/
-  │   │   └── style.css       # All the glitchy goodness
-  │   └── effects/
-  │       └── script.js       # The chaos generator
-  ├── vite.config.js          # Build configuration
-  ├── package.json            # Dependencies
-  └── vercel.json             # Deployment configuration
+  │   │   └── style.css          # Main page styling
+  │   ├── effects/
+  │   │   └── script.js          # Glitch and date/time logic
+  │   └── docs/
+  │       ├── EULA/
+  │       │   ├── EULA.html      # End User License Agreement
+  │       │   └── design/
+  │       │       └── style.css  # EULA page styling
+  │       └── FAQ/
+  │           ├── FAQ.html       # Frequently Asked Questions
+  │           └── design/
+  │               └── style.css  # FAQ page styling
+  ├── vite.config.js             # Build configuration (multi-page)
+  ├── vercel.json                # Vercel deployment config
+  ├── package.json               # Dependencies
+  └── EULA-LICENSE               # License file
   ```
+
+### 🌐 Pages & Features Overview
+
+#### **Main Page** (`/`)
+- Glitching "Website Coming Soon" headline with cyberpunk effects
+- Real-time date and time display with AM/PM indicator
+- Live social media links (LinkedIn, GitHub, Email)
+- Footer navigation to EULA, FAQ, and T-Rex Dino game
+- Mobile-optimized responsive design
+- Animated background with screen shake effects (desktop only)
+
+#### **EULA Page** (`/lib/docs/EULA/EULA.html`)
+- Complete End User License Agreement with 9 comprehensive sections
+- Covers:
+  - Grant of License for commercial and open-source use
+  - Mandatory Attribution Requirements
+  - Source File Header Requirements
+  - Open-Source Compatibility guidelines
+  - 75% Substantial Use Threshold policy
+  - Restrictions and limitations
+  - Warranty Disclaimer
+  - Liability Limitations
+  - Termination conditions
+- Clean, centered layout matching main site aesthetic
+- Back-to-home navigation button
+
+#### **FAQ Page** (`/lib/docs/FAQ/FAQ.html`)
+- 7 Frequently Asked Questions covering:
+  - Commercial use permissions
+  - Attribution requirements
+  - 75% codebase usage threshold
+  - Modification and derivative works
+  - Open-source project guidelines
+  - Contact information for licensing inquiries
+  - Compliance and enforcement
+- Professional Q&A formatting
+- Direct email link for licensing questions
+- Responsive design with proper styling
+
+#### **T-Rex Dino Game** (Easter Egg)
+- Quick link to Google's classic Chrome T-Rex dinosaur game
+- Located in main footer as a fun distraction
+- Opens in new tab/window
+- Easter egg link: `https://googledino.com/`
 
 ### Quick Start (Get Glitching in 60 Seconds)
 
@@ -133,7 +222,7 @@ Built with determination and spite for subscription services:
 
 Want to make it YOUR monument to procrastination?
 
-**Change the text:**
+**Change the main page text:**
 ```javascript
 // Edit lib/effects/script.js
 const glitchText = document.querySelector('.glitch');
@@ -141,16 +230,48 @@ glitchText.setAttribute('data-text', 'YOUR TEXT HERE');
 glitchText.textContent = 'YOUR TEXT HERE';
 ```
 
+**Customize the date/time display format:**
+```javascript
+// Edit lib/effects/script.js
+// Modify the dateTimeString in the updateDateTime() function
+// Currently: "${month} : ${day} : ${year}  |  TOD ⟿ ${hours} : ${minutes} : ${seconds} : ${pm_OR_am}"
+// Change the halfs array to modify AM/PM text:
+const halfs = ['A.M.', 'P.M.']; // Modify these strings
+```
+
+**Update EULA Terms:**
+```html
+<!-- Edit lib/docs/EULA/EULA.html -->
+<!-- Modify the license sections to match your specific requirements -->
+<!-- Each section is clearly labeled (1. Grant of License, 2. Attribution, etc.) -->
+```
+
+**Add/Edit FAQ Questions:**
+```html
+<!-- Edit lib/docs/FAQ/FAQ.html -->
+<!-- Each question is in a .faq-item div for easy organization -->
+<!-- Add new divs following the existing pattern -->
+```
+
 **Adjust glitch intensity:**
 ```css
 /* Edit lib/design/style.css */
-/* Look for @keyframes glitch and tweak the transform values */
+/* Look for @keyframes glitch-anim-1 and glitch-anim-2 and tweak the transform values */
 ```
 
 **Modify animation timing:**
 ```javascript
 // Edit lib/effects/script.js
-// Change the interval values (currently randomized between 50-150ms)
+// Change the interval values for random glitch effects
+// Line ~19: setInterval for randomGlitch (currently 200ms)
+// Line ~36: setInterval for screenShake (currently 300ms)
+```
+
+**Customize styling for each page:**
+```css
+/* Main page: lib/design/style.css */
+/* EULA page: lib/docs/EULA/design/style.css */
+/* FAQ page: lib/docs/FAQ/design/style.css */
 ```
 
 ### The Roadmap (aka: Future Over-Engineering Plans)
@@ -158,6 +279,11 @@ glitchText.textContent = 'YOUR TEXT HERE';
 - [x] Set up Vite build system (look at us being professional!)
 - [x] Organize files into lib structure (we're basically architects now)
 - [x] Production-ready build configuration (with minification and everything!)
+- [x] Real-time Date & Time Display with AM/PM (extra timekeeping!)
+- [x] EULA Legal Page with comprehensive licensing (we're official now!)
+- [x] FAQ Page with common questions (responsible open-source!)
+- [x] Multi-page Vite configuration (managing multiple HTML entries!)
+- [x] Mobile optimization for smooth scrolling (no more viewport glitches!)
 - [ ] Add sound effects (who doesn't want their coming soon page to make noise?)
 - [ ] Three.js particle background (because TWO animation systems aren't enough)
 - [ ] Custom pixel font loader (Comic Sans is too readable)
@@ -166,17 +292,33 @@ glitchText.textContent = 'YOUR TEXT HERE';
 
 ### Contributing
 
-Feel free to submit PRs that make this even more unnecessarily complex! Bonus points if you:
+Feel free to submit PRs that make this even more unnecessarily complex! Areas for contribution:
+
+**Code & Features:**
 - Add more CSS animations (there's always room for more)
 - Implement WebGL effects (because why not?)
 - Create alternative color schemes (dark mode for black? We're listening...)
 - Add easter eggs (press Konami code for something cool?)
 - Optimize the build size (currently ~6KB total, can we get it smaller?)
 
+**Documentation & Content:**
+- Improve EULA clauses or add additional legal terms
+- Expand FAQ with more common questions
+- Create translations of EULA and FAQ pages
+- Add browser compatibility notes
+
+**Design & UX:**
+- Create design variations for different sections
+- Optimize mobile experience further
+- Add accessibility features (ARIA labels, keyboard navigation)
+- Improve responsive breakpoints
+
 Please follow the existing structure:
-- Styles in `lib/design/`
+- Styles organized in `lib/design/`, `lib/docs/EULA/design/`, `lib/docs/FAQ/design/`
 - JavaScript in `lib/effects/`
+- HTML pages at root (`index.html`) and in `lib/docs/` subfolders
 - Keep it vanilla (no frameworks needed for pure chaos)
+- Maintain consistent coding style and comments
 
 ### Build Details
 
@@ -213,9 +355,21 @@ MIT - Because even our procrastination is open source.
 
 ### Final Thoughts
 
-Remember: This project exists because someone, somewhere, decided that paying for a link aggregation service was too mainstream. Now we have a glitching "Coming Soon" page with a proper build system, organized file structure, and production-ready deployment pipeline.
+Remember: This project started as a simple "Coming Soon" page and evolved into a fully-featured multi-page application with legal documentation, comprehensive FAQ, real-time clock, and a production-ready deployment pipeline.
 
-Was it worth it? The ~6KB bundle size says yes. The hours spent configuring Vite say... also yes, actually.
+Now we have:
+- 🏠 A glitching main page with interactive features
+- ⚖️ A complete EULA with professional licensing terms
+- ❓ A comprehensive FAQ addressing common questions
+- 🎮 Hidden easter eggs (T-Rex Dino game)
+- 🕐 Real-time date/time display with AM/PM
+- 📱 Full mobile responsiveness
+- 🚀 Multi-page Vite build configuration
+- 🌐 Vercel-ready deployment setup
+
+Was it worth it? Absolutely. The ~6KB bundle size says yes. The hours spent configuring multi-page Vite support say... also yes, actually.
+
+We went from a simple HTML file to a full professional project with proper build tooling, multiple pages, legal documentation, and comprehensive FAQ coverage. We should definitely be friends.
 
 **Live the dream. Deploy the placeholder. Over-engineer everything.**
 
