@@ -38,7 +38,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        eula: resolve(__dirname, 'lib/docs/EULA/eula.html'),
+        eula: resolve(__dirname, 'lib/docs/EULA/EULA.html'),
         faq: resolve(__dirname, 'lib/docs/FAQ/FAQ.html'),
       },
       output: {
