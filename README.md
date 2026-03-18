@@ -288,11 +288,7 @@ const halfs = ['A.M.', 'P.M.']; // Modify these strings
 - [ ] Three.js particle background (because TWO animation systems aren't enough)
 - [ ] Custom pixel font loader (Comic Sans is too readable)
 - [ ] Matrix-style falling text effect (there's no such thing as too much)
-- [ ] Dark mode toggle (for the black background? Yes, exactly)
-
-### Contributing
-
-Feel free to submit PRs that make this even more unnecessarily complex! Areas for contribution:
+- [x] Dark mode toggle (for the black background? Yes, exactly)
 
 **Code & Features:**
 - Add more CSS animations (there's always room for more)
@@ -345,10 +341,6 @@ npm run preview
 # Ensures everything works before deployment
 ```
 
-### License
-
-MIT - Because even our procrastination is open source.
-
 ---
 
 <div align="center">
@@ -357,29 +349,19 @@ MIT - Because even our procrastination is open source.
 
 Remember: This project started as a simple "Coming Soon" page and evolved into a fully-featured multi-page application with legal documentation, comprehensive FAQ, real-time clock, and a production-ready deployment pipeline.
 
-Now we have:
-- 🏠 A glitching main page with interactive features
-- ⚖️ A complete EULA with professional licensing terms
-- ❓ A comprehensive FAQ addressing common questions
-- 🎮 Hidden easter eggs (T-Rex Dino game)
-- 🕐 Real-time date/time display with AM/PM
-- 📱 Full mobile responsiveness
-- 🚀 Multi-page Vite build configuration
-- 🌐 Vercel-ready deployment setup
+Now I proudly look back at what's been developed and what it meanms to me as an Uprising Developer:
+- A glitching main page with interactive features
+- A complete EULA with professional licensing terms
+- A comprehensive FAQ addressing common questions
+- Hidden easter eggs (T-Rex Dino game)
+- Real-time date/time display with AM/PM
+- Full mobile responsiveness
+- Multi-page Vite build configuration
+- Vercel-ready deployment setup
 
 Was it worth it? Absolutely. The ~6KB bundle size says yes. The hours spent configuring multi-page Vite support say... also yes, actually.
 
-We went from a simple HTML file to a full professional project with proper build tooling, multiple pages, legal documentation, and comprehensive FAQ coverage. We should definitely be friends.
+I was able to go from a simple HTML file to a full professional project with proper build tooling, multiple pages, legal documentation, and comprehensive FAQ coverage. We should definitely be friends.
 
-**Live the dream. Deploy the placeholder. Over-engineer everything.**
-
----
-
-*P.S. - If you're actually reading this, congratulations! You've found the most over-documented and over-engineered "Coming Soon" page on GitHub. We went from a simple HTML file to a full Vite project with proper build tooling. We should definitely be friends.*
-
-[![Star this repo](https://img.shields.io/github/stars/yourusername/Custom-Coming-Soon?style=social)](https://github.com/yourusername/Custom-Coming-Soon)
-[![Follow me](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
-
-**Made with ☕ and existential dread about subscription services**
-
+**Live your wildest dreams. Deploy what you believe might be the placeholder. ALSO Over-engineer everything.**
 </div>
