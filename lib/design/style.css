@@ -32,6 +32,21 @@ body {
     letter-spacing: 0.1em;
 }
 
+.datetime-container {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    color: #00ffff;
+    font-family: 'Courier New', monospace;
+    font-size: clamp(0.85rem, 2.25vw, 1rem);
+    padding: 10px;
+    letter-spacing: 0.05em;
+}
+
+.datetime-container p {
+    margin: 0;
+}
+
 .glitch-container {
     flex: 1;
     display: flex;
@@ -286,10 +301,15 @@ body {
             .glitch-container {
                 letter-spacing: 0.03em;
                 padding: 0 10px;
+                transform: none !important;
             }
-            
+
             body {
                 padding: 20px 10px;
+            }
+
+            .datetime-container {
+                font-size: clamp(0.75rem, 2vw, 0.9rem);
             }
         }
 
@@ -297,9 +317,14 @@ body {
             .glitch-container {
                 letter-spacing: 0.02em;
                 line-height: 1.1;
+                transform: none !important;
             }
-            
+
             .footer-container {
                 font-size: clamp(0.6rem, 2.5vw, 0.75rem);
+            }
+
+            .datetime-container {
+                font-size: clamp(0.7rem, 2vw, 0.85rem);
             }
         }
