@@ -69,14 +69,14 @@ This project features:
   - 100% more cyberpunk
   - Saves approximately 0.0001% of your monitor's energy
 
-- ⚡ **Glitching Text Animation** - Because static text is for people who don't appreciate:
-  - CSS keyframe animations that would make a film editor weep
-  - JavaScript that randomly shakes your text like it's having an existential crisis
-  - The aesthetic of a 1990s hacker movie, but modernized for 2026's discerning taste
+- ⚡ **Glitching Text + Countdown Loop** - Because static text is for people who don't appreciate:
+  - A 10s escalating glitch phase for "Website Coming Soon"
+  - A 10s bold "Release Date" countdown takeover in format `YY : MM : DD : SS`
+  - Continuous looped glitch-out transitions between both states
 
-- 🕐 **Real-Time Date & Time Display** - Live clock showing:
+- 🕐 **Real-Time Date & TOD Display** - Live clock showing:
   - Current date in format: `Month : DD : YYYY`
-  - Current time with AM/PM indicator: `HH : MM : SS : A.M./P.M.`
+  - Current time in 24-hour format: `HH : MM : SS`
   - Updates every second with smooth formatting
 
 - 📜 **EULA & Legal Compliance** - Multi-page structure featuring:
@@ -91,9 +91,10 @@ This project features:
   - Contact information and licensing questions
   - Open-source project guidelines
 
-- 🎮 **Easter Egg - T-Rex Dino Game** - Hidden feature:
-  - Quick access link to the classic Google Chrome T-Rex dinosaur game
-  - Provides a fun distraction on the main footer
+- 🎮 **Built-In T-Rex Dino Game** - Integrated feature:
+  - Runs directly inside this codebase (no external redirect)
+  - Includes clouds, stars, sun/moon, moving obstacles, and endless play loop
+  - Supports tap/click jump and selectable outline color themes
 
 - 📱 **Mobile Responsive** - Works on phones, tablets, and probably your smart fridge
 
@@ -108,7 +109,8 @@ This project features:
   │   ├── design/
   │   │   └── style.css          # Main page styling
   │   ├── effects/
-  │   │   └── script.js          # Glitch and date/time logic
+  │   │   ├── script.js          # Glitch/countdown/date-time loop
+  │   │   └── transitions.js     # Cross-page black fade transitions
   │   └── docs/
   │       ├── EULA/
   │       │   ├── EULA.html      # End User License Agreement
@@ -118,6 +120,13 @@ This project features:
   │           ├── FAQ.html       # Frequently Asked Questions
   │           └── design/
   │               └── style.css  # FAQ page styling
+  │   └── games/
+  │       └── dino/
+  │           ├── dino.html      # In-repo endless runner page
+  │           ├── design/
+  │           │   └── style.css  # Dino page styling
+  │           └── effects/
+  │               └── game.js    # Dino game loop and rendering
   ├── vite.config.js             # Build configuration (multi-page)
   ├── vercel.json                # Vercel deployment config
   ├── package.json               # Dependencies
@@ -163,10 +172,10 @@ This project features:
 - Responsive design with proper styling
 
 #### **T-Rex Dino Game** (Easter Egg)
-- Quick link to Google's classic Chrome T-Rex dinosaur game
-- Located in main footer as a fun distraction
-- Opens in new tab/window
-- Easter egg link: `https://googledino.com/`
+- Built-in endless runner on a dedicated local page
+- Located in main footer as a direct in-app launch
+- Includes customizable outline colors and touch/click controls
+- Route: `/lib/games/dino/dino.html`
 
 ### Quick Start (Get Glitching in 60 Seconds)
 
