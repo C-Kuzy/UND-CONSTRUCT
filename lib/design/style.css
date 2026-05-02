@@ -51,7 +51,7 @@ body {
     display: grid;
     place-items: center;
     position: relative;
-    font-size: clamp(2.25rem, 8.6vw, 5.5rem);
+    font-size: clamp(2.45rem, 9.1vw, 6.1rem);
     font-weight: bold;
     color: #ffffff;
     letter-spacing: 0.05em;
@@ -141,6 +141,10 @@ body {
     justify-content: center;
     gap: clamp(10px, 1.5vw, 16px);
     text-transform: uppercase;
+    --countdown-value-size: clamp(1.56rem, 4.45vw, 3.1rem);
+    --countdown-hint-scale: 0.38;
+    --countdown-slot-digit: 2.2ch;
+    --countdown-slot-separator: 1.6ch;
 }
 
 .glitch-container.mode-countdown .countdown-wrapper {
@@ -161,17 +165,18 @@ body {
 }
 
 .countdown-label {
-    font-size: clamp(2.15rem, 5.8vw, 4rem);
+    font-size: clamp(2.35rem, 6.3vw, 4.45rem);
 }
 
 .countdown-value {
-    font-size: clamp(1.4rem, 4vw, 2.75rem);
+    font-size: var(--countdown-value-size);
     white-space: nowrap;
     display: grid;
-    grid-template-columns: repeat(5, 2ch 3ch) 2ch;
+    grid-template-columns: repeat(5, var(--countdown-slot-digit) var(--countdown-slot-separator)) var(--countdown-slot-digit);
     justify-content: center;
     align-items: center;
     column-gap: 0;
+    font-variant-numeric: tabular-nums;
 }
 
 .countdown-part,
@@ -181,27 +186,28 @@ body {
 }
 
 .countdown-part {
-    min-width: 2ch;
+    width: var(--countdown-slot-digit);
+    min-width: var(--countdown-slot-digit);
 }
 
 .countdown-separator {
     opacity: 0.88;
-    width: 3ch;
+    width: var(--countdown-slot-separator);
 }
 
 .countdown-format-hint {
-    margin-top: 6px;
+    margin-top: 3px;
     color: rgba(255, 255, 255, 0.55);
-    font-size: clamp(0.52rem, 1.08vw, 0.72rem);
+    font-size: var(--countdown-value-size);
     letter-spacing: 0;
     text-transform: none;
     display: grid;
-    grid-template-columns: repeat(5, 2ch 3ch) 2ch;
+    grid-template-columns: repeat(5, var(--countdown-slot-digit) var(--countdown-slot-separator)) var(--countdown-slot-digit);
     justify-content: center;
     align-items: center;
     column-gap: 0;
     white-space: nowrap;
-    line-height: 1;
+    line-height: 0;
 }
 
 .countdown-format-hint span {
@@ -213,13 +219,17 @@ body {
 }
 
 .countdown-hint-part {
-    min-width: 2.4ch;
+    width: var(--countdown-slot-digit);
+    min-width: var(--countdown-slot-digit);
     white-space: nowrap;
+    transform: scale(var(--countdown-hint-scale));
+    transform-origin: center top;
+    line-height: 1;
 }
 
 .countdown-separator-gap {
     visibility: hidden;
-    width: 3ch;
+    width: var(--countdown-slot-separator);
 }
 
 .countdown-label::before,
@@ -559,7 +569,7 @@ body {
 
 @media (max-width: 768px) {
     .glitch-container {
-        font-size: clamp(2.42rem, 9.7vw, 4.6rem);
+        font-size: clamp(2.54rem, 10.2vw, 4.9rem);
         letter-spacing: 0.03em;
         padding: 0 10px;
     }
@@ -573,27 +583,23 @@ body {
     }
 
     .countdown-label {
-        font-size: clamp(1.87rem, 6.3vw, 3.22rem);
+        font-size: clamp(2.02rem, 6.8vw, 3.45rem);
     }
 
-    .countdown-value {
-        font-size: clamp(1.24rem, 4.45vw, 2.18rem);
-        grid-template-columns: repeat(5, 2ch 3ch) 2ch;
+    .countdown-wrapper {
+        --countdown-value-size: clamp(1.36rem, 4.9vw, 2.36rem);
+        --countdown-hint-scale: 0.36;
     }
 
     .glitch-container.mode-countdown .countdown-wrapper {
         transform: translateY(-20px);
     }
 
-    .countdown-format-hint {
-        font-size: clamp(0.48rem, 1.45vw, 0.66rem);
-        grid-template-columns: repeat(5, 2ch 3ch) 2ch;
-    }
 }
 
 @media (max-width: 480px) {
     .glitch-container {
-        font-size: clamp(2.2rem, 10.7vw, 3.85rem);
+        font-size: clamp(2.36rem, 11vw, 4.06rem);
         letter-spacing: 0.02em;
         line-height: 1.1;
     }
@@ -607,20 +613,16 @@ body {
     }
 
     .countdown-label {
-        font-size: clamp(1.58rem, 6.7vw, 2.55rem);
+        font-size: clamp(1.72rem, 7vw, 2.75rem);
     }
 
-    .countdown-value {
-        font-size: clamp(1.12rem, 4.9vw, 1.68rem);
-        grid-template-columns: repeat(5, 2ch 3ch) 2ch;
+    .countdown-wrapper {
+        --countdown-value-size: clamp(1.2rem, 5.15vw, 1.84rem);
+        --countdown-hint-scale: 0.34;
     }
 
     .glitch-container.mode-countdown .countdown-wrapper {
         transform: translateY(-16px);
     }
 
-    .countdown-format-hint {
-        font-size: clamp(0.46rem, 2.1vw, 0.62rem);
-        grid-template-columns: repeat(5, 2ch 3ch) 2ch;
-    }
 }
