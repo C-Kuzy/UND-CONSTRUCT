@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Rex Dino - UNDER CONSTRUCTION</title>
+    <link rel="icon" href="../../assets/Construct.png" type="web-icon">
+    <link rel="stylesheet" href="./design/style.css">
+</head>
+<body>
+    <header class="dino-header">
+        <h1>T-Rex Dino</h1>
+        <p id="datetime-display">Loading...</p>
+    </header>
+
+    <main class="dino-main">
+        <section class="color-panel" aria-label="Choose game outline color">
+            <h2>Outline Color</h2>
+            <div class="color-options">
+                <button type="button" class="color-option active" data-color="#4a4a4a">Dark Grey</button>
+                <button type="button" class="color-option" data-color="#bdbdbd">Light Grey</button>
+                <button type="button" class="color-option" data-color="#ffffff">White</button>
+                <button type="button" class="color-option" data-color="#ff0000">Red</button>
+                <button type="button" class="color-option" data-color="#00ff00">Green</button>
+                <button type="button" class="color-option" data-color="#0080ff">Blue</button>
+                <button type="button" class="color-option" data-color="#ffff00">Yellow</button>
+                <button type="button" class="color-option" data-color="#bb33ff">Purple</button>
+                <button type="button" class="color-option" data-color="#ff8c00">Orange</button>
+                <button type="button" class="color-option" data-color="#8b4513">Brown</button>
+            </div>
+            <h2 class="mode-heading">Play Speed</h2>
+            <div class="mode-options" role="group" aria-label="Choose game speed mode">
+                <button type="button" class="mode-option" data-mode="casual" data-multiplier="1">Casual → 1x</button>
+                <button type="button" class="mode-option" data-mode="regular" data-multiplier="2">Regular → 2x</button>
+                <button type="button" class="mode-option active" data-mode="fast" data-multiplier="3">Fast → 3x</button>
+            </div>
+        </section>
+
+        <section class="game-shell">
+            <canvas id="dino-canvas" width="960" height="360" aria-label="Endless Dino game canvas"></canvas>
+            <p class="game-note">Tap / Click / Space / ↑ to jump. Endless run mode stays active with no cap.</p>
+        </section>
+
+        <a class="back-link" href="../../../index.html">← Back to Main Page</a>
+    </main>
+
+    <script type="module" src="../../effects/transitions.js"></script>
+    <script type="module" src="./effects/game.js"></script>
+</body>
+</html>

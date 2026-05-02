@@ -40,6 +40,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         eula: resolve(__dirname, 'lib/docs/EULA/EULA.html'),
         faq: resolve(__dirname, 'lib/docs/FAQ/FAQ.html'),
+        dino: resolve(__dirname, 'lib/games/dino/dino.html'),
       },
       output: {
         // Content-based hashing for cache busting
